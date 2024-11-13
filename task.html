@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+      nav ul li {
+         margin-right: 15px;
+      }
+      nav ul li a {
+         text-decoration: none;
+      }
+      nav ul li a.active {
+         font-weight: bold;
+         color: red;
+      }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="passport.html">Изменяем кириллицу на латиницу по клику</a>
+      </li>
+      <li>
+        <a href="https://www.hse.ru/" target="_blank">Внешний сайт</a>
+      </li>
+      <li>
+        <a class="active" href="task.html">Решение алгоритмической задачи</a>
+      </li>
+      <li>
+        <a href="dom.html">DOM_JS. Считываем информацию из DOM</a>
+      </li>
+    </ul>       
+  </nav>
+    <p>Формулировка задачи: Имеется коробка со сторонами: A × B × C. 
+      Определить, пройдёт ли она в дверь с размерами M × K</p>
+  <form>
+    <label>Размеры коробки (A × B × C):</label>
+    <input type="number" id="boxA" placeholder="Введите A" required min="1">
+    <input type="number" id="boxB" placeholder="Введите B" required min="1">
+    <input type="number" id="boxC" placeholder="Введите C" required min="1">
+
+    <label>Размеры двери (M × K):</label>
+    <input type="number" id="doorM" placeholder="Введите M" required min="1">
+    <input type="number" id="doorK" placeholder="Введите K" required min="1">
+  </form>
+  <button type="submit" onclick="checkFit()">Проверить</button>
+  <p id="result"></p>
+  <br>
+  <br>
+  <label for="searchQuery">Введите текст для поиска:</label>
+  <input type="text" id="searchQuery" placeholder="Введите текст">
+  <button type="submit" onclick="openSearch()">Запрос</button>
+
+    
+
+  <script src="checkFit.js"></script>
+</body>
+</html>

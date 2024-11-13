@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <style>
+      nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+<body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="passport.html">Изменяем кириллицу на латиницу по клику</a>
+        </li>
+        <li>
+          <a href="https://www.hse.ru/" target="_blank">Внешний сайт</a>
+        </li>
+        <li>
+          <a href="task.html">Решение алгоритмической задачи</a>
+        </li>
+        <li>
+          <a class="active" href="dom.html">DOM_JS. Считываем информацию из DOM</a>
+        </li>
+      </ul>       
+    </nav>
+    <img src="dom.png" alt="скрин дом">
+      
+</body>
+</html>

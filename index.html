@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <style>
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+          display: flex;
+      }
+      nav ul li {
+          margin-right: 15px;
+      }
+      nav ul li a {
+          text-decoration: none;
+      }
+      nav ul li a.active {
+          font-weight: bold;
+          color: red;
+      }
+      
+      td, th {
+        border: 1px solid black;
+      }
+      table{
+        background-image: url("back.png");
+      }
+      
+    </style>
+<body>
+    <nav>
+      <ul>
+        <li>
+          <a class="active" href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="passport.html">Изменяем кириллицу на латиницу по клику</a>
+        </li>
+    
+        <li>
+          <a href="https://www.hse.ru/" target="_blank">Внешний сайт</a>
+        </li>
+        <li>
+          <a href="task.html">Решение алгоритмической задачи</a>
+        </li>
+        <li>
+          <a href="dom.html">DOM_JS. Считываем информацию из DOM</a>
+        </li>
+      </ul>       
+    </nav>
+    <h1 id="top">Всё о компьютерах</h1>
+    
+    <p>
+        <a href="#section1">Компьютерные комплектующие</a> | 
+        <a href="#section2">Интересные факты</a> | 
+        
+    </p>
+
+    <h2 id="section1">Компьютерные комплектующие</h2>
+    <ul>
+        <li>Видеокарта</li>
+        <li>Процессор</li>
+        <li>Кулер процессора</li>
+        <li>Материнская плата</li>
+        <li>ОЗУ</li>
+        <li>Блок питания</li>
+        <li>HDD/SSD диск</li>
+        <li>Корпус</li>
+
+    </ul>
+ 
+
+  <h2 id="section2">Интересные факты</h2>
+  <p>Как поменять термопасту на компьютере?</p>
+  <ol>
+    <li>Отсоедините 3-пин провод от материнской платы</li>
+    <li>Открутите крепежные винты</li>
+    <li>Снимите кулер</li>
+    <li>Возьмите тряпку, смочив её перед этим спиртом</li>
+    <li>Протрите процессор и нижнюю часть кулера, чтобы очистить их от старой термопасты</li>
+    <li>Нанесите новую термопасту на процессор</li>
+    <li>Размажьте термопасту по всей площади процессора</li>
+    <li>Установите обратно кулер процессора</li>
+    <li>Не забудьте подключить кулер к материнской плате</li>
+</ol>
+<p>Все компьютерные комплектующие имеют составные части, вот некоторые из них: </p>
+<ul>
+  <li>Кулер процессора</li>
+  <ol>
+    <li>Скоба</li>
+    <li>Вентилятор</li>
+    <li>Радиатор</li>
+    <li>Тепловые трубки</li>
+  </ol>
+  <li>Блок питания</li>
+  <ol>
+    <li>Трансформаторы</li>
+    <li>Конденсаторы</li>
+    <li>Управляющая плата</li>
+    <li>Вентилятор</li>
+  </ol>
+</ul>
+
+  <img src="graphic_link.jpg" alt="Видеокарта" title="Перед вами одна из самых мощных видеокарт - RTX 4090, выпущенная в Октябре 2022 г.">
+  <br>
+  <a href="graphic_link.jpg" target="_blank"><img src="graphic_link.jpg" width="30px" height="10px"></a>
+  <br>
+
+  <table>
+    <tr>
+        <td><a href="nv.png" target="_blank">Ссылка на логотип Nvidia- одного из главных производителей видеокарта</a></td>
+        <td>«Глаз» Nvidia находится в постоянном поиске инноваций и будущего.</td>
+    </tr>
+    <tr>
+      <td>Глава компании Дженсен Хуанг</td>
+      <td><a href="huang.jpg" target="_blank"><img src="huang.jpg" width="100" alt="Миниатюра"></td></a>
+    </tr>
+  </table>
+  <h3>Если вы ещё не определились, какие комплектующие выбрать, заполните форму, чтобы получить рекомендацию от нас</h3>
+  <form>
+    <label for="lastName">Фамилия:</label>
+    <input type="text" id="lastName" name="lastName" required><br>
+
+    <label for="firstName">Имя:</label>
+    <input type="text" id="firstName" name="firstName" required><br>
+
+    <label for="group">Группа:</label>
+    <input type="text" id="group" name="group" required><br>
+
+    <label for="phone">Мобильный телефон:</label>
+    <input type="number" id="phone" name="phone" required><br>
+
+    <label for="email">Электронная почта:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="sendDate">Дата отправки:</label>
+    <input type="date" id="sendDate" name="sendDate" required><br>
+
+    <button type="submit" onclick="openFormURL()">Отправить</button>
+  </form>
+  <br>
+  <h3>Если вы уже готовые сделать заказ, заполните форму ниже</h3>
+  <form>
+    <label for="productName">Название продукта:</label>
+    <input type="text" id="productName" name="productName" value="Товар по умолчанию"><br>
+
+    <label for="quantity">Количество:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1"><br>
+
+    <label>Доставка:</label><br>
+    <input type="radio" id="delivery1" name="delivery" value="express">
+    <label for="delivery1">Экспресс-доставка</label><br>
+    <input type="radio" id="delivery2" name="delivery" value="standard" checked>
+    <label for="delivery2">Стандартная доставка</label><br>
+
+    <label>Дополнительные услуги:</label><br>
+    <input type="checkbox" id="giftWrap" name="giftWrap" value="yes">
+    <label for="giftWrap">Подарочная упаковка</label><br>
+
+    <label for="deliveryDate">Дата доставки:</label>
+    <input type="date" id="deliveryDate" name="deliveryDate"><br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <input type="hidden" name="userID" value="12345">
+
+    <button type="submit" onclick="orderURL()">Отправить заказ</button>
+</form>
+
+  <a href="#top">К началу</a>
+  <script src="forms.js"></script>
+</body>
+</html>

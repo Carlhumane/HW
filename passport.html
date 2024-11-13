@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Passport_pages</title>
+   <style>
+      nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+
+        }
+      nav ul li {
+         margin-right: 15px;
+      }
+      nav ul li a {
+         text-decoration: none;
+      }
+      nav ul li a.active {
+         font-weight: bold;
+         color: red;
+      }
+      
+      body {
+         margin: 0;
+         position: relative;
+      }
+
+      .container {
+         background-image: url("passport_pattern.jpg");
+         background-repeat: no-repeat;
+         position: absolute;
+         top: 80px;
+         left:0px;
+         right: 0;
+         height: 100vh;
+      }
+
+      .element{
+         position: absolute;
+         font-size: 14px; 
+      }
+
+      .issue_body {
+         top: 80px; 
+         left: 105px;
+      }
+
+      .issue_date{
+         top: 160px;
+         left: 105px;
+      }
+      .department_code{
+         top: 160px;
+         left: 300px;
+      }
+      
+      .signiture{
+         top: 244px;
+         left: 320px;
+      }
+
+      .surname{
+         top: 400px;
+         left: 220px;
+      }
+
+      .name{
+         top: 455px;
+         left: 220px;
+      }
+
+      .father_name{
+         top: 485px;
+         left: 220px;
+      }
+
+      .gender{
+         top: 525px;
+         left: 210px;
+      }
+
+      .date_of_birth{
+         top: 505px;
+         left: 300px;
+      }
+
+      .place_of_birth{
+         top: 545px;
+         left: 220px;
+      }
+
+      .personal_pict{
+         top: 435px;
+         left: 30px;
+      }
+
+
+      .all_button{
+         top: 200px;
+         left:600px;
+      }
+   
+   </style>
+</head>
+<body>
+   <nav>
+      <ul>
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a class="active" href="passport.html">Изменяем кириллицу на латиницу по клику</a>
+        </li>
+        <li>
+          <a href="https://www.hse.ru/" target="_blank">Внешний сайт</a>
+        </li>
+        <li>
+          <a href="task.html">Решение алгоритмической задачи</a>
+        </li>
+        <li>
+          <a href="dom.html">DOM_JS. Считываем информацию из DOM</a>
+        </li>
+      </ul>       
+    </nav>
+   <div class="container">
+      <div class="element issue_body">УМВД РОССИИ ПО ТАТАРСТАНУ</div>
+      <div class="element issue_date">13.03.2013</div>
+      <div class="element department_code">313-013</div>
+      <div class="element signiture"><img src="signiture.png"></div>
+      <div class="element surname"><p>МИХЕЙЛИС</p></div>
+      <div class="element name"><p>КИРИЛЛ</p></div>
+      <div class="element father_name"><p>КОНРАДОВИЧ</p></div>
+      <div class="element gender">МУЖ</div>
+      <div class="element date_of_birth"><p>13.03.2005</p></div>
+      <div class="element place_of_birth">ГОР. МОСКВА</div>
+      <div class="element personal_pict"><img src="personal_pict.jpg" width="135"></div>
+      <div class="element all_button" id="for_click_all"><button>изменить</button></div>
+   </div>
+   
+     
+   
+   
+   <script src="function.js"></script>
+</body>
+</html>
